@@ -1,0 +1,222 @@
+
+$base-font-size:16px;
+$text-color-red:rgb(234, 109, 47);
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size:$base-font-size;
+}
+header{
+    background-color: #FBFBF3;
+    margin-top: 2rem;
+    height: 75vh;
+    .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+.logo{
+        font-style: italic;
+        font-size: 3rem;
+
+        .logo__first--letter{
+            text-transform: uppercase;
+            color:$text-color-red;
+        }
+    }
+}
+.menu{
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    
+    .menu_items{
+        list-style: none;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:0 2rem;
+    
+
+        li{
+          margin: 0 2rem;
+          
+
+          a{
+            text-decoration: none;
+            color: black;
+            font-size:1.5rem;
+
+            &:hover{
+                color: $text-color-red;
+                text-decoration: underline;
+            }
+            .active{
+                color: $text-color-red;
+                text-decoration: underline;
+            }
+          }
+          
+        }
+
+
+
+    }
+    .account{
+        display: flex;
+        justify-content: space-around;
+        // width: 100%;
+        margin: 0 2rem;
+
+
+        .account__buttons{
+                  width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin:0 1rem;
+            cursor: pointer;
+            // background-color: black;
+      
+        }
+    }
+}
+
+.hero__container{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 600px;
+   justify-items: center;
+
+
+    .hero__container--text{
+        margin-left: 5rem;
+        h1{
+            font-size: 3.5rem;
+            width: 60%;
+            
+            span{
+                color:$text-color-red;
+
+                span{
+                    -webkit-transform-origin-x: 3px;
+                }
+            }
+           
+        }
+         p{
+                margin-top: 1rem;
+                width: 50%;
+                line-height: 1.2rem;
+            }
+            input{
+                margin-top: 1rem;
+                border-radius: 5px;
+                padding: .6rem .5rem;
+                outline: none;
+                background-color: #fff;
+                border: 1px solid grey;
+            }
+
+            button{
+            padding: .7rem 1rem;
+            border-radius: 5px;
+            background-color:$text-color-red; ;
+             outline: none;
+             border: none;
+             color: #fff;
+            }
+
+            .features{
+                margin-top: 1rem;
+            }
+            .checkout, .shipping{
+                display: flex;
+                align-items: center;
+               margin:0 1rem;
+            }
+    }
+
+    .hero__container--image{
+     .hero__image{
+        width: 100%;
+        height: auto;
+     }
+    }
+}
+
+}
+
+
+
+
+.pizza__menu{
+    width: 100%;
+    margin-top: 1rem;
+    
+    
+    h2{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .pizza__menu--container{
+        width: 100%;
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+
+    .pizza__menu--container--individual{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  .pizza__img{
+        width: 50%;
+        height: auto;
+    }
+
+    .pizza__details{
+        width: 70%;
+
+        .pizza__details--header{
+
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            align-items: center;
+
+            span{
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+
+           
+        }
+         .pizza__details--footer{
+                margin-top: 1rem;
+
+                button{
+                    margin:1rem auto;
+                      padding: .7rem 1rem;
+            border-radius: 5px;
+            background-color:$text-color-red; ;
+             outline: none;
+             border: none;
+             color: #fff;
+             cursor: pointer;
+                }
+            }
+    }
+
+    }
+  
+}

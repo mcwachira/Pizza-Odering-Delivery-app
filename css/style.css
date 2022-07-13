@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-size: 16px; }
+
+header {
+  background-color: #FBFBF3;
+  margin-top: 2rem;
+  height: 75vh; }
+  header .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    header .navbar .logo {
+      font-style: italic;
+      font-size: 3rem; }
+      header .navbar .logo .logo__first--letter {
+        text-transform: uppercase;
+        color: #ea6d2f; }
+  header .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    header .menu .menu_items {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 2rem; }
+      header .menu .menu_items li {
+        margin: 0 2rem; }
+        header .menu .menu_items li a {
+          text-decoration: none;
+          color: black;
+          font-size: 1.5rem; }
+          header .menu .menu_items li a:hover {
+            color: #ea6d2f;
+            text-decoration: underline; }
+          header .menu .menu_items li a .active {
+            color: #ea6d2f;
+            text-decoration: underline; }
+    header .menu .account {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 2rem; }
+      header .menu .account .account__buttons {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin: 0 1rem;
+        cursor: pointer; }
+  header .hero__container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 600px;
+    justify-items: center; }
+    header .hero__container .hero__container--text {
+      margin-left: 5rem; }
+      header .hero__container .hero__container--text h1 {
+        font-size: 3.5rem;
+        width: 60%; }
+        header .hero__container .hero__container--text h1 span {
+          color: #ea6d2f; }
+          header .hero__container .hero__container--text h1 span span {
+            -webkit-transform-origin-x: 3px; }
+      header .hero__container .hero__container--text p {
+        margin-top: 1rem;
+        width: 50%;
+        line-height: 1.2rem; }
+      header .hero__container .hero__container--text input {
+        margin-top: 1rem;
+        border-radius: 5px;
+        padding: .6rem .5rem;
+        outline: none;
+        background-color: #fff;
+        border: 1px solid grey; }
+      header .hero__container .hero__container--text button {
+        padding: .7rem 1rem;
+        border-radius: 5px;
+        background-color: #ea6d2f;
+        outline: none;
+        border: none;
+        color: #fff; }
+      header .hero__container .hero__container--text .features {
+        margin-top: 1rem; }
+      header .hero__container .hero__container--text .checkout, header .hero__container .hero__container--text .shipping {
+        display: flex;
+        align-items: center;
+        margin: 0 1rem; }
+    header .hero__container .hero__container--image .hero__image {
+      width: 100%;
+      height: auto; }
+
+.pizza__menu {
+  width: 100%;
+  margin-top: 1rem; }
+  .pizza__menu h2 {
+    font-size: 2.5rem;
+    text-align: center; }
+  .pizza__menu .pizza__menu--container {
+    width: 100%;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+  .pizza__menu .pizza__menu--container--individual {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .pizza__menu .pizza__menu--container--individual .pizza__img {
+      width: 50%;
+      height: auto; }
+    .pizza__menu .pizza__menu--container--individual .pizza__details {
+      width: 70%; }
+      .pizza__menu .pizza__menu--container--individual .pizza__details .pizza__details--header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        align-items: center; }
+        .pizza__menu .pizza__menu--container--individual .pizza__details .pizza__details--header span {
+          font-weight: bold;
+          font-size: 1.2rem; }
+      .pizza__menu .pizza__menu--container--individual .pizza__details .pizza__details--footer {
+        margin-top: 1rem; }
+        .pizza__menu .pizza__menu--container--individual .pizza__details .pizza__details--footer button {
+          margin: 1rem auto;
+          padding: .7rem 1rem;
+          border-radius: 5px;
+          background-color: #ea6d2f;
+          outline: none;
+          border: none;
+          color: #fff;
+          cursor: pointer; }
