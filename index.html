@@ -48,8 +48,10 @@
                 </button>
             </div>
             <div class="cart">
-               <button class="account__buttons" type="button">
+               <button class="account__buttons cart__button" type="button">
                 <i class="fas fa-shopping-cart"></i>
+            
+
                </button>
             </div>
             </div>
@@ -285,6 +287,60 @@
                 </div>
             </div>
         </div>
+    </section>
+
+
+    <section class="cart">
+
+        <h3>
+            Cart
+        </h3>
+
+
+                <div class="cart__items">
+                    <div class="cart__items--headers">
+                        <h2>
+                            Item
+                        </h2>
+                        <h2>
+                            Price
+                        </h2>
+                        <h2>
+                            Quantity
+                        </h2>
+                    </div>
+                
+                    <div class="cart__items-body">
+                        <div class="cart__items--img">
+                            <img src="images/pizza/cheeze.webp" class="cart__img" alt="">
+                        </div>
+                
+                        <div class="cart__items--price">
+                            $9.99
+                        </div>
+                        <div class="cart__items--quantity">
+                
+                        <input type="number" class="cart__items--quantity__input"  value="2">
+                        <button class="cart__items-delete">
+                            Remove
+                        </button>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="cart__total">
+                
+                    <span>
+                        $9.99
+                    </span>
+                </div>
+
+                <button class="cart__checkout">
+                    Checkout
+                </button>
+    </div>
+
     </section>
 
     <script src="js/app.js"></script>

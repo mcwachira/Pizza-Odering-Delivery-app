@@ -82,6 +82,10 @@ header{
             margin:0 1rem;
             cursor: pointer;
             // background-color: black;
+
+            
+             
+            }
       
         }
     }
@@ -152,7 +156,7 @@ header{
     }
 }
 
-}
+
 
 
 
@@ -219,4 +223,92 @@ header{
 
     }
   
+}
+
+.cart{
+    margin-top: 3rem;
+    width: 50%;
+
+    h3{
+        text-align: center;
+        font-size: 3rem;
+    }
+       .cart__items{
+       
+                    width:100%;
+                    margin:1rem 5rem;
+                   
+
+                    .cart__items--headers{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                       h2{
+                        font-size: 2rem;
+                        text-decoration: underline;
+                       }
+                    }
+                    .cart__items-body{
+                        margin-top: .5rem;
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        align-items: center;
+                        .cart__items--img{
+                            width: 200px;
+
+                            .cart__img{
+                                width: 100px;
+                                height:100px;
+                            }
+                        }
+
+                        .cart__items--quantity{
+                           
+                            display: flex;
+                            justify-content: space-between;
+
+                                .cart__items--quantity__input{
+                            padding: .2rem 1rem;
+                            width: 70px;
+                                border-radius: 5px;
+                                margin:0 2rem
+                        }
+                        .cart__items-delete{
+                                   margin:1rem auto;
+                      padding: .7rem .5rem;
+            border-radius: 5px;
+            background-color:$text-color-red; ;
+             outline: none;
+             border: none;
+             color: #fff;
+             cursor: pointer;
+                        }
+
+                        }
+
+                    
+                    }
+                }
+
+                .cart__total{
+                    display: flex;
+                    justify-content: flex-end;
+                    font-size: 2.5rem;
+                }
+
+                .cart__checkout{
+                 margin: 1rem  5rem;
+                 margin-bottom: 2rem;
+  
+                padding: 1rem 1rem;
+            border-radius: 5px;
+            background-color:$text-color-red; ;
+             outline: none;
+             border: none;
+             color: #fff;
+             cursor: pointer;
+                }
 }
