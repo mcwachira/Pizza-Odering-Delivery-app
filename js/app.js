@@ -1,28 +1,50 @@
-const removeItemBtn = document.querySelectorAll('.cart__items-delete')
-const inputQuantityContainer = document.getElementsByClassName('cart__items--quantity__input')[0]
+if(document.readyState == 'loading'){
+    document.addEventListener('DOMContentLoaded', ready)
+}{
+    ready()
+}
+
+
+function ready(){
+
+    const removeItemBtn = document.querySelectorAll('.cart__items-delete')
+    //function to remove item from cart
+    removeItemBtn.forEach((button) => {
+        button.addEventListener('click', () => {
+            console.log('clicekd')
+            const itemContainer = button.parentElement.parentElement.remove();
+
+
+            UpdateCart()
+        })
+    })
+
+
+}
+
+
+
+
+const inputQuantityContainer = document.querySelectorAll('.cart__items--quantity__input')
 const addToCartBtn = document.querySelectorAll('.orderButton')
 
+const checkoutBtn = document.getElementsByClassName('cart__checkout')[0];
 
-
-
-
-
-
-//function to remove item from cart
-removeItemBtn.forEach((button) => (button.addEventListener('click', () => {
-    const itemContainer = button.parentElement.parentElement.remove();
-
-
-    UpdateCart()
-})))
 
 //update price based on item quantity 
-inputQuantityContainer.addEventListener('change', (e) => {
-    if(isNaN(e.target.value) || e.target.value <=0){
-        return 1;
+
+inputQuantityContainer.forEach((input) => (input.addEventListener('change', (e) => {
+    if (isNaN(e.target.value) || e.target.value <= 0) {
+        e.target.value = 1
     }
-    UpdateCart()
+    UpdateCart();
 })
+))
+
+
+
+
+
 
 
 //add To cart event Listener
@@ -72,6 +94,19 @@ const addToCart = (itemPrice, itemImage, itemName) => {
 }
 
 
+//checkout function 
+
+checkoutBtn.addEventListener('click', () => {
+    const checkOutItemsContainer= document.getElementsByClassName('cart__items')[0].innerHTML = "";
+    const checkoutTotal = document.getElementsByClassName('cart__total')[0].innerHTML = "";
+    console.log(checkOutItemsContainer)
+    alert('orderer completed ')
+    UpdateCart()
+
+    
+})
+
+
 const UpdateCart = () => {
     const CartContainer =  document.getElementsByClassName('cart__items')[0]
 
@@ -96,5 +131,5 @@ const UpdateCart = () => {
     total = Math.round(total * 100) /100
 
     //update the total
-    document.getElementsByClassName('cart__total')[0].innerText =total
+    document.getElementsByClassName('cart__total')[0].innerText = "$" + total
 }
